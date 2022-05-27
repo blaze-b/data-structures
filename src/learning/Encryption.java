@@ -31,8 +31,7 @@ import static java.nio.charset.StandardCharsets.US_ASCII;
 public class Encryption {
 
     public static final String SECRET_KEY =
-            "fuoEXZjHFfgT7jByO5fGD/uLp3mkbwj0vPxbvLXUnXwwnHFZFI2FXuygW22o0aO/O2OIMe1OIBiva9e9y6FO" +
-                    "+ExZVXilhhVJUIS7MsmUjDo=";
+            "test-key";
     private static final String SALTED_STR = "Salted__";
     private static final byte[] SALTED_MAGIC = SALTED_STR.getBytes(US_ASCII);
 
