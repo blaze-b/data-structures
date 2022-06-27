@@ -9,4 +9,11 @@
         1. **Object**: An `entity` that has `state, behavior and identity`, is known as an object e.g., chair, bike, marker, pen, table, car, etc. It can be physical or logical (tangible and intangible).
         2. **Class**: A class is a group of objects which have common properties. It is a `template or blueprint` from which objects are created. It is a logical entity. It can't be physical.
         **It contains**: `Fields, Methods, Constructors, Blocks, Nested Class and interfaces`
-        3. **Inheritance**: 
+        3. **Inheritance**: It is a `mechanism` one object acquires all the features of the parent object, It represents the `IS-A relationship` which is nothing but a simple parent-child relationship,
+        
+           _Why?_: For the case of `method overriding during runtime` and also for `maximum reusable code`
+           
+           Types of Inheritance: `Single, Multi-level, Hierarchial`
+           
+           
+           
