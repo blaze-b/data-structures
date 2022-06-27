@@ -1,6 +1,7 @@
 # JAVA-8
 
 - **Features of java**
+
     ![alt text](./images/JAVA-Features.PNG)
     
     1. **Object-Oriented**: Everything in java is considered as an object,
