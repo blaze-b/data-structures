@@ -42,7 +42,7 @@ public class Ping {
     public static void main(String[] args) throws InterruptedException, IOException {
         int count = 0;
         while (true) {
-            boolean reachable = Ping.ping("https://leni-stage-tech-data-ingestion-lpm-870-bf3mds3yyq-de.a.run.app");
+            boolean reachable = Ping.ping("https://leni-stage-tech-data-ingestion-lpm-906-bf3mds3yyq-de.a.run.app");
             int j = count++;
             System.out.println("Reachable"+count+" = " + reachable);
             Thread.sleep(10000);
