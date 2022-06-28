@@ -13,7 +13,14 @@
         
            _Why?_: For the case of `method overriding during runtime` and also for `maximum reusable code`
            
-           Types of Inheritance: `Single, Multi-level, Hierarchial`
+           Types of Inheritance: `Single, Multi-level, Hierarchial, Multiple(not supported in java)`
+ 
+           Aggregation:If a class have an entity reference, it is known as Aggregation. Aggregation represents `HAS-A relationship`
            
-           
+         4. **Abstraction**  : It is a process of hiding the implementation details and showing only functionality to the user,
+            
+            There are two ways to achieve abstraction in java
+            
+            1. Abstract class (0 to 100%)
+            2. Interface (100%)
            
