@@ -11,7 +11,7 @@
         **It contains**: `Fields, Methods, Constructors, Blocks, Nested Class and interfaces`
         3. **Inheritance**: It is a `mechanism` one object acquires all the features of the parent object, It represents the `IS-A relationship` which is nothing but a simple parent-child relationship,
         
-           _Why?_: For the case of `method overriding during runtime` and also for `maximum reusable code`
+           _Why?_ For the case of `method overriding during runtime` and also for `maximum reusable code`
            
            Types of Inheritance: `Single, Multi-level, Hierarchial, Multiple(not supported in java)`
  
