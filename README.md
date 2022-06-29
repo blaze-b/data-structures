@@ -15,12 +15,17 @@
            
            Types of Inheritance: `Single, Multi-level, Hierarchial, Multiple(not supported in java)`
  
-           Aggregation:If a class have an entity reference, it is known as Aggregation. Aggregation represents `HAS-A relationship`
-           
-         4. **Abstraction**  : It is a process of hiding the implementation details and showing only functionality to the user,
+           **Aggregation**:If a class have an entity reference, it is known as Aggregation. Aggregation represents `HAS-A relationship`
+         
+         4. **Polymorphism** : Polymorphism in Java is a `concept` by which we can perform a single action in different ways
+         
+         5. **Abstraction**  : It is a process of hiding the implementation details and showing only functionality to the user,
             
             There are two ways to achieve abstraction in java
             
             1. Abstract class (0 to 100%)
             2. Interface (100%)
+            
+            
+- **Pre-requisites for development `JDK & JRE Structure`**: ![Alt text](https://miro.medium.com/max/636/1*8oNn6HxcWFmrCsgUt27k0w.jpeg)
            
