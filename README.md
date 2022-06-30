@@ -209,7 +209,9 @@
    
    ![Alt text](https://static.javatpoint.com/core/images/hierarchy-of-exception-handling.png)
 
-   - Types of exceptions: ![Alt text](https://static.javatpoint.com/core/images/types-of-exception-handling.png)
+   - Types of exceptions: 
+   
+        ![Alt text](https://static.javatpoint.com/core/images/types-of-exception-handling.png)
 
         1) Checked Exception: The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions. For example, IOException, SQLException, etc. Checked exceptions are checked at compile-time.
         
