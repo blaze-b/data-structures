@@ -47,3 +47,72 @@
             }  
         }
     
+- **Variable Declaration and initialization**
+    1. Variables are used to represent values that may be changed in the program. In Java, all variables must be declared before they can be used,
+     
+        The basic form of a variable declaration is shown here:
+        
+        `type identifier [ = value][, identifier [= value] ...] ;`
+        
+        ![Alt text](http://www.atnyla.com/library/images-tutorials/int-data-type-in-java-2a.PNG)
+        
+        Types of variables in with respective data types,
+        
+        ![Alt text](http://www.atnyla.com/library/images-tutorials/variable-types-in-java.png)
+
+- **Object Reference**:
+
+    1. Object references do not hold the value of the object they refer to
+    
+    2. They point to an object by storing the memory address where the object is located
+    
+    3. A reference variable has a “handle” to an object that allows you access to that object’s attributes. 
+    
+    4. The default value of all object references is null. A reference can be assigned to another object of the same type or to a new object using the new keyword.
+
+
+- **Java Arrays**:
+
+    1. It is an object which contains elements of a similar data type
+    
+    2. Additionally, The elements of an array are stored in a `contiguous memory location(consecutive addresses)`
+    
+    3. We can store only a fixed set of elements in a Java array.
+    
+    4. ![Alt text](https://www.javatpoint.com/images/core/array.gif)
+    
+    5. Advantages
+        
+        Code Optimization: It makes the code optimized, we can retrieve or sort the data efficiently.
+        
+        Random access: We can get any data located at an index position.
+    
+    6. Disadvantages
+        
+        Size Limit: We can store only the fixed size of elements in the array. 
+        
+        It doesn't grow its size at runtime. To solve this problem, collection framework is used in Java which grows automatically.
+
+    7. There are two types of array.
+       
+          1. Single Dimensional Array
+          
+                    //Syntax
+                    dataType[] arr; (or)  
+                    dataType []arr; (or)  
+                    dataType arr[];
+                    //initiation
+                    arrayRefVar=new datatype[size];
+                       
+          2. Multidimensional Array
+          
+                    //Syantax
+                    dataType[][] arrayRefVar; (or)  
+                    dataType [][]arrayRefVar; (or)  
+                    dataType arrayRefVar[][]; (or)  
+                    dataType []arrayRefVar[]; 
+                    //Intantiate
+                    int[][] arr=new int[3][3];//3 row and 3 column
+                    
+
+- **Control Flow in Java/Control Statements in Java**
