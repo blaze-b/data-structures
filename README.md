@@ -1,20 +1,20 @@
 # JAVA
 
-##**Features of java**
+## Features of java
 
    ![alt text](./images/JAVA-Features.PNG)
     
                       
-##**Pre-requisites for development**, `JDK & JRE Structure`: 
+## Pre-requisites for development, JDK & JRE Structure 
     
    ![Alt text](https://miro.medium.com/max/636/1*8oNn6HxcWFmrCsgUt27k0w.jpeg)
       
             
-##**Structure of a java program**:
+## Structure of a java program
  
    ![Alt text](https://www.dremendo.com/java-programming-tutorial/images/java-program-structure.png)
 
-##**Sample Code Example**: 
+## Sample Code Example 
 
         import java.util.*;
         import java.lang.*;
@@ -30,7 +30,7 @@
             }  
         }
     
-##**Variable Declaration and Initialization**
+## Variable Declaration and Initialization
 
    1. Variables are used to represent values that may be changed in the program. In Java, all variables must be declared before they can be used,
      
@@ -44,7 +44,7 @@
         
         ![Alt text](http://www.atnyla.com/library/images-tutorials/variable-types-in-java.png)
 
-##**Object Reference**:
+## Object Reference
 
    1. Object references do not hold the value of the object they refer to
     
@@ -55,7 +55,7 @@
    4. The default value of all object references is null. A reference can be assigned to another object of the same type or to a new object using the new keyword.
 
 
-##**Java Arrays**:
+## Java Arrays
 
    1. It is an object which contains elements of a similar data type
     
@@ -99,7 +99,7 @@
                     int[][] arr=new int[3][3];//3 row and 3 column
                     
 
-- **Control Flow in Java/Control Statements in Java**
+## Control Flow in Java/Control Statements in Java
 
    1. Java compiler executes the code from top to bottom. The statements in the code are executed according to the order in which they appear
    
@@ -125,7 +125,7 @@
                 continue statement
 
 
-##**Object Oriented Programming**
+## Object Oriented Programming
      
    1. Everything in java is considered as an object. The OOPs concepts are followed as well,
         
@@ -201,7 +201,7 @@
          e.g., a capsule which is mixed of several medicines.
 
 
-##**Exception Handling in Java**
+## Exception Handling in Java
  
    - The Exception Handling in Java is one of the powerful mechanism to handle the runtime errors so that the normal flow of the application can be maintained.
     
@@ -240,4 +240,4 @@
                 }  
 
 
-##**String**
+## String
