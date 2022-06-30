@@ -1,201 +1,77 @@
-# JAVA
+# Interview Questions
 
-- **Features of java**
+1) What are wrapper classes in Java?
+    
+    Wrapper classes convert the Java primitives into the reference types (objects). Every primitive data type has a class dedicated to it. These are known as wrapper classes because they “wrap” the primitive data type into an object of that class
 
-    ![alt text](./images/JAVA-Features.PNG)
+2) What is singleton class in Java and how can we make a class singleton?
+
+    Singleton class is a class whose only one instance can be created at any given time, in one JVM. A class can be made singleton by making its constructor private.
+
+3) What is the difference between Array list and vector in Java?
+
+   ![Alt text](./images/Array-list.PNG)
+
+4) When can you use the super keyword?
+
+    In Java, the super keyword is a reference variable that refers to an immediate parent class object.
+    When you create a subclass instance, you’re also creating an instance of the parent class, which is referenced to by the super reference variable.
     
-                      
-- **Pre-requisites for development**, `JDK & JRE Structure`: 
+    The uses of the Java super Keyword are- 
     
-    ![Alt text](https://miro.medium.com/max/636/1*8oNn6HxcWFmrCsgUt27k0w.jpeg)
+        1. To refer to an immediate parent class instance variable, use super.
+        
+        2. The keyword super can be used to call the method of an immediate parent class.
+        
+        3. Super() can be used to call the constructor of the immediate parent class.
+
+5) What makes a HashSet different from a TreeSet?
+
+    ![Alt text](./images/Difference-Hashset-Treeset.PNG)
+    
+6) What are the differences between HashMap and HashTable in Java?
+
+    ![Alt text](./images/Hashset-hashtable.PNG)
+    
+7) How is the creation of a String using new() different from that of a literal?
+
+    When we create a string using new(), a new object is created. Whereas, if we create a string using the string literal syntax, it may return an already existing object with the same name.
+
+8) Why is synchronization necessary? Explain with the help of a relevant example?
+
+    Java allows multiple threads to execute. They may be accessing the same variable or object. Synchronization helps to execute threads one after another.
+    It is important as it helps to execute all concurrent threads while being in sync. It prevents memory consistency errors due to access to shared memory. An example of synchronization code is-
       
-            
-- **Structure of a java program**:
- 
-    ![Alt text](https://www.dremendo.com/java-programming-tutorial/images/java-program-structure.png)
-
-- **Sample Code Example**: 
-
-        import java.util.*;
-        import java.lang.*;
-        import java.io.*;
-        
-        class HelloWorld {
-            public static void main(String[] args) {
-              System.out.println("Hello World......");
-              Scanner scanner = new Scanner(System.in);
-              System.out.println("Enter the value");
-              int value = scanner.nextInt();
-              System.out.println("Entered value\t"+value);
-            }  
-        }
-    
-- **Variable Declaration and Initialization**
-
-    1. Variables are used to represent values that may be changed in the program. In Java, all variables must be declared before they can be used,
+        public synchronized void increment()
+        {
+        a++;
+        } 
      
-        The basic form of a variable declaration is shown here:
-        
-        `type identifier [ = value][, identifier [= value] ...] ;`
-        
-        ![Alt text](http://www.atnyla.com/library/images-tutorials/int-data-type-in-java-2a.PNG)
-        
-        Types of variables in with respective data types,
-        
-        ![Alt text](http://www.atnyla.com/library/images-tutorials/variable-types-in-java.png)
+     As we have synchronized this function, this thread can only use the object after the previous thread has used it.
 
-- **Object Reference**:
+9) What are the differences between Heap and Stack Memory in Java?
 
-    1. Object references do not hold the value of the object they refer to
-    
-    2. They point to an object by storing the memory address where the object is located
-    
-    3. A reference variable has a “handle” to an object that allows you access to that object’s attributes. 
-    
-    4. The default value of all object references is null. A reference can be assigned to another object of the same type or to a new object using the new keyword.
+    ![Alt text](./images/heap-stack.PNG)
 
+10) What are access modifiers in Java?
 
-- **Java Arrays**:
-
-    1. It is an object which contains elements of a similar data type
-    
-    2. Additionally, The elements of an array are stored in a `contiguous memory location(consecutive addresses)`
-    
-    3. We can store only a fixed set of elements in a Java array.
-    
-       ![Alt text](https://www.javatpoint.com/images/core/array.gif)
-    
-    4. Advantages
-        
-        Code Optimization: It makes the code optimized, we can retrieve or sort the data efficiently.
-        
-        Random access: We can get any data located at an index position.
-    
-    5. Disadvantages
-        
-        Size Limit: We can store only the fixed size of elements in the array. 
-        
-        It doesn't grow its size at runtime. To solve this problem, collection framework is used in Java which grows automatically.
-
-    6. There are two types of array.
-       
-          1. Single Dimensional Array
-          
-                    //Syntax
-                    dataType[] arr; (or)  
-                    dataType []arr; (or)  
-                    dataType arr[];
-                    //initiation
-                    arrayRefVar=new datatype[size];
-                       
-          2. Multidimensional Array
-          
-                    //Syantax
-                    dataType[][] arrayRefVar; (or)  
-                    dataType [][]arrayRefVar; (or)  
-                    dataType arrayRefVar[][]; (or)  
-                    dataType []arrayRefVar[]; 
-                    //Intantiate
-                    int[][] arr=new int[3][3];//3 row and 3 column
-                    
-
-- **Control Flow in Java/Control Statements in Java**
-
-   1. Java compiler executes the code from top to bottom. The statements in the code are executed according to the order in which they appear
-   
-   2. However, Java provides statements that can be used to control the flow of Java code and such statements are called `control flow statements`
-
-   3. Java provides three types of control flow statements.
-   
-        1. Decision Making statements
-            
-                if statements
-                switch statement
-            
-        2. Loop statements
-            
-                do while loop
-                while loop
-                for loop
-                for-each loop
-            
-        3. Jump statements
-            
-                break statement
-                continue statement
-
-
-- **Object Oriented Programming**
-     
-    1. Everything in java is considered as an object. The OOPs concepts are followed as well,
-        
-        1. **Object**: An `entity` that has `state, behavior and identity`, is known as an object e.g., chair, bike, marker, pen, table, car, etc. It can be physical or logical (tangible and intangible).
-        
-        2. **Class**: A class is a group of objects which have common properties. It is a `template or blueprint` from which objects are created. It is a logical entity. It can't be physical.
-        **It contains**: `Fields, Methods, Constructors, Blocks, Nested Class and interfaces`
-        
-        3. **Packages**: A java package is a group of similar types of classes, interfaces and sub-packages.
-                     
-            Package in java can be categorized in two form, `built-in package` and `user-defined package`.
-                     
-            There are many built-in packages such as java, lang, awt, javax, swing, net, io, util, sql etc.
-                    
-            ![Alt text](https://static.javatpoint.com/images/package.JPG)
-        
-        4. **Inheritance**: It is a `mechanism` one object acquires all the features of the parent object, It represents the `IS-A relationship` which is nothing but a simple parent-child relationship,
-        
-            _Why?_ For the case of `method overriding during runtime` and also for `maximum reusable code`
-           
-            Types of Inheritance: `Single, Multi-level, Hierarchial, Multiple(not supported in java)`
- 
-           **Aggregation**:If a class have an entity reference, it is known as Aggregation. Aggregation represents `HAS-A relationship`
+    In Java, access modifiers are special keywords which are used to restrict the access of a class, constructor, data member and method in another class. Java supports four types of access modifiers:
+        `Default, Private, Protected, Public`
          
-        5. **Polymorphism** : Polymorphism in Java is a `concept` by which we can perform a single action in different ways,
-        
-             1. Method Overloading(Compile time polymorphism) in Java: If a class has multiple methods having same name but different in parameters, It is also known as
-             
-                    //changing no. of arguments
-                    class Adder{  
-                    static int add(int a,int b){return a+b;}  
-                    static int add(int a,int b,int c){return a+b+c;}  
-                    } 
-                     
-                    class TestOverloading1{  
-                    public static void main(String[] args){  
-                    System.out.println(Adder.add(11,11));  
-                    System.out.println(Adder.add(11,11,11));  
-                    }}
-                    
-                    
-                    //changing data type of arguments
-                    class Adder{  
-                    static int add(int a, int b){return a+b;}  
-                    static double add(double a, double b){return a+b;}  
-                    }  
-                    class TestOverloading2{  
-                    public static void main(String[] args){  
-                    System.out.println(Adder.add(11,11));  
-                    System.out.println(Adder.add(12.3,12.6));  
-                    }}  
-                    
-             2. Method Overriding(Run Time Polymorphism) in Java: If a subclass provides the specific implementation of the method that has been declared by one of its parent class
-                  
-                      Rules for Java Method Overriding
-                       1. The method must have the same name as in the parent class
-                       2. The method must have the same parameter as in the parent class.
-                       3. There must be an IS-A relationship (inheritance).
-                 
-              A real example of Java Method Overriding, Consider a scenario where Bank is a class that provides functionality to get the rate of interest. However, the rate of interest varies according to banks. For example, SBI, ICICI and AXIS banks could provide 8%, 7%, and 9% rate of interest.
-              
-              ![Alt text](https://static.javatpoint.com/images/core/bankinheritance.png)
-              
-        6. **Abstraction**  : It is a `process of hiding` the implementation details and showing only functionality to the user,
-          
-             There are two ways to achieve abstraction in java
-            
-                1. Abstract class (0 to 100%)
-                
-                2. Interface (100%)
-                
-        7. **Encapsulation**: Encapsulation in Java is a `process of wrapping code and data together` into a single unit,
-         e.g., a capsule which is mixed of several medicines.
+    ![Alt text](./images/Access-Modifier.PNG)
+    
+11) What is final keyword in Java?
+
+    final is a special keyword in Java that is used as a non-access modifier. A final variable can be used in different contexts such as:
+    
+    1. final variable : When the final keyword is used with a variable then its value can’t be changed once assigned. In case the no value has been assigned to the final variable then using only the class constructor a value can be assigned to it.
+    
+    2. final method : When a method is declared final then it can’t be overridden by the inheriting class.
+       
+    3. final class : When a class is declared as final in Java, it can’t be extended by any subclass class but it can extend other class.
+
+12) What is Java String Pool?
+
+    Java String pool refers to a collection of Strings which are stored in heap memory. In this, whenever a new object is created, String pool first checks whether the object is already present in the pool or not. If it is present, then the same reference is returned to the variable else new object will be created in the String pool and the respective reference will be returned.
+    
+    ![Alt text](./images/string-pool.PNG)
