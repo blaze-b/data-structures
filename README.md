@@ -242,4 +242,103 @@
                 }  
 
 
-## String
+## String Builder
+
+   - Java StringBuilder class is used to create mutable (modifiable) String. The Java StringBuilder class is same as StringBuffer class except that it is non-synchronized
+   
+   - Some important string builder methods:
+   
+       1) StringBuilder append() method: to add the string to the existing one
+       
+                class StringBuilderExample{  
+                public static void main(String args[]){  
+                StringBuilder sb=new StringBuilder("Hello ");  
+                sb.append("Java");//now original string is changed  
+                System.out.println(sb);//prints Hello Java  
+                }  
+                }  
+                
+       2) StringBuilder insert() method: to insert a given string
+       
+               class StringBuilderExample2{  
+               public static void main(String args[]){  
+               StringBuilder sb=new StringBuilder("Hello ");  
+               sb.insert(1,"Java");//now original string is changed  
+               System.out.println(sb);//prints HJavaello  
+               }  
+               }  
+               
+       3) StringBuilder replace() method: replaces the given string from the specified beginIndex and endIndex
+   
+                class StringBuilderExample3{  
+                public static void main(String args[]){  
+                StringBuilder sb=new StringBuilder("Hello");  
+                sb.replace(1,3,"Java");  
+                System.out.println(sb);//prints HJavalo  
+                }  
+                }  
+                
+       4) StringBuilder delete() method: deletes the string from the specified beginIndex to endIndex
+       
+                class StringBuilderExample4{  
+                public static void main(String args[]){  
+                StringBuilder sb=new StringBuilder("Hello");  
+                sb.delete(1,3);  
+                System.out.println(sb);//prints Hlo  
+                }  
+                }  
+                
+        5) StringBuilder reverse() method: reverse() method of StringBuilder class reverses the current string
+        
+                class StringBuilderExample5{  
+                public static void main(String args[]){  
+                StringBuilder sb=new StringBuilder("Hello");  
+                sb.reverse();  
+                System.out.println(sb);//prints olleH  
+                }  
+                }  
+
+
+## Collections in Java
+
+   - The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects.
+   
+   - Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.
+   
+   - Hierarchy:
+   
+        ![Alt text](https://static.javatpoint.com/images/java-collection-hierarchy.png)
+
+
+## Streams
+
+   - Java provides a new additional package in Java 8 called java.util.stream. This package consists of classes, interfaces and enum to allows functional-style operations on the elements. You can use stream by importing java.util.stream package.
+
+            import java.util.*;  
+            import java.util.stream.Collectors;  
+            class Product{  
+                int id;  
+                String name;  
+                float price;  
+                public Product(int id, String name, float price) {  
+                    this.id = id;  
+                    this.name = name;  
+                    this.price = price;  
+                }  
+            }  
+            public class JavaStreamExample {  
+                public static void main(String[] args) {  
+                    List<Product> productsList = new ArrayList<Product>();  
+                    //Adding Products  
+                    productsList.add(new Product(1,"HP Laptop",25000f));  
+                    productsList.add(new Product(2,"Dell Laptop",30000f));  
+                    productsList.add(new Product(3,"Lenevo Laptop",28000f));  
+                    productsList.add(new Product(4,"Sony Laptop",28000f));  
+                    productsList.add(new Product(5,"Apple Laptop",90000f));  
+                    List<Float> productPriceList2 =productsList.stream()  
+                                                 .filter(p -> p.price > 30000)// filtering data  
+                                                 .map(p->p.price)        // fetching price  
+                                                 .collect(Collectors.toList()); // collecting as list  
+                    System.out.println(productPriceList2);  
+                }  
+            }  
