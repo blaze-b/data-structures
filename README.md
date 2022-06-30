@@ -5,9 +5,9 @@
     ![alt text](./images/JAVA-Features.PNG)
     
                       
-- **Pre-requisites for development** 
-
-    `JDK & JRE Structure`: ![Alt text](https://miro.medium.com/max/636/1*8oNn6HxcWFmrCsgUt27k0w.jpeg)
+- **Pre-requisites for development**, `JDK & JRE Structure`: 
+    
+    ![Alt text](https://miro.medium.com/max/636/1*8oNn6HxcWFmrCsgUt27k0w.jpeg)
       
             
 - **Structure of a java program**:
@@ -144,17 +144,58 @@
         
         4. **Inheritance**: It is a `mechanism` one object acquires all the features of the parent object, It represents the `IS-A relationship` which is nothing but a simple parent-child relationship,
         
-           _Why?_ For the case of `method overriding during runtime` and also for `maximum reusable code`
+            _Why?_ For the case of `method overriding during runtime` and also for `maximum reusable code`
            
-           Types of Inheritance: `Single, Multi-level, Hierarchial, Multiple(not supported in java)`
+            Types of Inheritance: `Single, Multi-level, Hierarchial, Multiple(not supported in java)`
  
            **Aggregation**:If a class have an entity reference, it is known as Aggregation. Aggregation represents `HAS-A relationship`
          
-        5. **Polymorphism** : Polymorphism in Java is a `concept` by which we can perform a single action in different ways
-         
-        6. **Abstraction**  : It is a `process` of `hiding` the implementation details and showing only functionality to the user,
+        5. **Polymorphism** : Polymorphism in Java is a `concept` by which we can perform a single action in different ways,
+        
+             1. Method Overloading(Compile time polymorphism) in Java: If a class has multiple methods having same name but different in parameters, It is also known as
+             
+                    //changing no. of arguments
+                    class Adder{  
+                    static int add(int a,int b){return a+b;}  
+                    static int add(int a,int b,int c){return a+b+c;}  
+                    } 
+                     
+                    class TestOverloading1{  
+                    public static void main(String[] args){  
+                    System.out.println(Adder.add(11,11));  
+                    System.out.println(Adder.add(11,11,11));  
+                    }}
+                    
+                    
+                    //changing data type of arguments
+                    class Adder{  
+                    static int add(int a, int b){return a+b;}  
+                    static double add(double a, double b){return a+b;}  
+                    }  
+                    class TestOverloading2{  
+                    public static void main(String[] args){  
+                    System.out.println(Adder.add(11,11));  
+                    System.out.println(Adder.add(12.3,12.6));  
+                    }}  
+                    
+             2. Method Overriding(Run Time Polymorphism) in Java: If a subclass provides the specific implementation of the method that has been declared by one of its parent class
+                  
+                      Rules for Java Method Overriding
+                       1. The method must have the same name as in the parent class
+                       2. The method must have the same parameter as in the parent class.
+                       3. There must be an IS-A relationship (inheritance).
+                 
+              A real example of Java Method Overriding, Consider a scenario where Bank is a class that provides functionality to get the rate of interest. However, the rate of interest varies according to banks. For example, SBI, ICICI and AXIS banks could provide 8%, 7%, and 9% rate of interest.
+              
+              ![Alt text](https://static.javatpoint.com/images/core/bankinheritance.png)
+              
+        6. **Abstraction**  : It is a `process of hiding` the implementation details and showing only functionality to the user,
+          
+             There are two ways to achieve abstraction in java
             
-            There are two ways to achieve abstraction in java
-            
-            1. Abstract class (0 to 100%)
-            2. Interface (100%)
+                1. Abstract class (0 to 100%)
+                
+                2. Interface (100%)
+                
+        7. **Encapsulation**: Encapsulation in Java is a `process of wrapping code and data together` into a single unit,
+         e.g., a capsule which is mixed of several medicines.
