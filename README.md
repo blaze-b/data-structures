@@ -1,4 +1,4 @@
-# JAVA-8
+# JAVA
 
 - **Features of java**
 
@@ -29,3 +29,21 @@
             
 - **Pre-requisites for development `JDK & JRE Structure`**: ![Alt text](https://miro.medium.com/max/636/1*8oNn6HxcWFmrCsgUt27k0w.jpeg)
            
+- **Structure of a java program**: ![Alt text](https://www.dremendo.com/java-programming-tutorial/images/java-program-structure.png)
+
+- **Sample Code Example**: 
+
+        import java.util.*;
+        import java.lang.*;
+        import java.io.*;
+        
+        class HelloWorld {
+            public static void main(String[] args) {
+              System.out.println("Hello World......");
+              Scanner scanner = new Scanner(System.in);
+              System.out.println("Enter the value");
+              int value = scanner.nextInt();
+              System.out.println("Entered value\t"+value);
+            }  
+        }
+    
