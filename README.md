@@ -75,3 +75,62 @@
     Java String pool refers to a collection of Strings which are stored in heap memory. In this, whenever a new object is created, String pool first checks whether the object is already present in the pool or not. If it is present, then the same reference is returned to the variable else new object will be created in the String pool and the respective reference will be returned.
     
     ![Alt text](./images/string-pool.PNG)
+    
+    
+13) What are microservices? What is better microservices or monolith?
+
+14) What are some of the annotations used in the sping boot at class level?
+
+    @Component – Identifies a Java Class that is to be registered as a Spring Bean
+    
+    @Controller or @RestController – Web Layer services like mapping HTTP request to handler methods and processing response
+    
+    @Repository – Vendor neutral Exception Translation Service on DAO Classes – DataAcessException
+    
+    @Configuration – Java based configuration/code representing a factory to create Spring beans
+    
+    @Service – does nothing special, What? I’m confused!
+
+15) How to deploy spring boot application in tomcat?
+
+    Whenever you will create your spring boot application and run it, Spring boot will automatically detect the embedded tomcat server and deploy your application on tomcat.
+    After successful execution of your application, you will be able to launch your rest endpoints and get a response.
+
+
+16) What is auto configuration in spring boot?
+
+    AutoConfiguration is a process by which Spring Boot automatically configures all the infrastructural beans. It declares the built-in beans/objects of the spring specific module such as JPA, spring security and so on based on the dependencies present in your applications class path.
+
+17) What are the @RequestMapping and @RestController annotation in Spring Boot used for?
+
+    The @RequestMapping annotation can be used at class-level or method level in your controller class.
+    
+    The global request path that needs to be mapped on a controller class can be done by using @RequestMapping at class-level. If you need to map a particular request specifically to some method level.
+    
+    Below is a simple example to refer to:
+    
+        @RestController
+        @RequestMapping("/greatLearning")
+        public class GreatLearningController {
+        @RequestMapping("/")
+        String greatLearning(){
+        return "Hello from greatLearning ";
+        }
+        @RequestMapping("/welcome")
+        String welcome(){
+        return "Welcome from GreatLearning";
+        }
+        }
+        
+    The @RestController annotation is used at the class level.
+    
+    You can use @RestController when you need to use that class as a request handler class.All the requests can be mapped and handled in this class.
+    
+    @RestController itself consists @Controller and @ResponseBody which helps us to remove the need of annotating every method with @ResponseBody annotation.
+
+
+18) Java code to find the second highest salary?
+
+        SELECT salary 
+        FROM employee 
+        ORDER BY salary desc limit n-1,1
