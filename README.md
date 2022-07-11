@@ -1,3 +1,5 @@
 # Data-Structures
 
-An essential platform to learn the fundamentals of programming language, efficient ways to handle the data for learning purposes
+- A data structure is a particular way of organizing data in a computer so that it can be used effectively
+
+- 
