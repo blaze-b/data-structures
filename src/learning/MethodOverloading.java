@@ -1,6 +1,6 @@
 package learning;
 
-public class MethodOverloadingTest {
+public class MethodOverloading {
 
     public int test(String s) {
         System.out.println(s);
@@ -11,8 +11,8 @@ public class MethodOverloadingTest {
         return 1;
     }
     public static void main(String[] args) {
-        MethodOverloadingTest methodOverloadingTest = new MethodOverloadingTest();
-        int test = methodOverloadingTest.test(null);
+        MethodOverloading methodOverloading = new MethodOverloading();
+        int test = methodOverloading.test(null);
         System.out.println(test);
     }
 }
